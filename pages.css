@@ -1,0 +1,340 @@
+ body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #ffffff;
+      color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      height: 100%;
+    }
+
+    .left-side, .right-side {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .left-side {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .left-side h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+    .first {
+    animation: fadeInDown 1s ease-out;
+  }
+
+    .left-side p {
+      font-size: 1.5rem;
+      color: #000000;
+      margin-bottom: 1.5rem;
+      animation: fadeIn 1.5s ease-out;
+      animation-fill-mode: both;
+    }
+    .left-side p:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.left-side p:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.Saly14 {
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+    z-index: 2;
+}
+form {
+    margin-top: 2rem;
+    animation: fadeInUp 1s ease-out;
+    animation-delay: 0.9s;
+    animation-fill-mode: both;
+}
+
+    .left-side a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .form-box {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-box h2 {
+      margin-bottom: 1.5rem;
+      font-size: 1.75rem;
+      font-weight: normal;
+      color: #000000;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 1.5rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #f0edff;
+      font-size: 1rem;
+      color: #4b4b4b;
+      transition: all 0.3s ease;
+    }
+
+    .form-box input::placeholder {
+      color: #9d7dcccf;
+    }
+
+    .form-box .forgot {
+      text-align: right;
+      font-size: 0.9rem;
+      margin-bottom: 1.2rem;
+      color: #8f8f8f;
+    }
+
+    .form-box .forgot a {
+      color: #8f8f8f;
+      text-decoration: none;
+    }
+
+    .form-box button {
+      width: 106.9%;
+      padding: 14px;
+      background-color: #5f4bd3;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      cursor: pointer;
+      margin-bottom: 1.8rem;
+      box-shadow: 0px 10px 50px rgba(95, 75, 211, 0.3);
+    }
+    .form-box button:hover {
+      background-color: #4b3bb0;
+    }
+    button:active {
+    transform: translateY(0);
+    box-shadow: 0px 5px 30px rgba(95, 75, 211, 0.3);
+    }
+
+    .social-login {
+      text-align: center;
+      font-size: 1rem;
+      color: #888;
+    }
+
+    .social-icons img {
+      width: 36px;
+      margin: 0 12px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      }
+
+      .left-side, .right-side {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+      }
+
+      .left-side {
+        align-items: center;
+      }
+
+      .left-side h1, .left-side p {
+        text-align: center;
+      }
+    }
+.frgot:hover{
+    cursor: pointer;
+    animation-delay: 0ms;
+    animation: reverse;
+    color: black;
+}
+.social-button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 5px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.social-button.google    { background: #db4437; }
+.social-button.facebook  { background: #3b5998; }
+.social-button.twitter   { background: #1da1f2; }
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+}
+input:invalid {
+  border: 2px solid red;
+}
+input:valid {
+  border: 2px solid rgb(51, 0, 128);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .Saly14 {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .left-side {
+    text-align: center;
+  }
+
+  .left-side p {
+    width: 100% !important;
+    left: 0 !important;
+    position: relative !important;
+    text-align: center;
+  }
+}.social-icons img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+.social-icons img:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}.header-bar {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.header-image {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  height: 50px;
+}
+
+.logo-centered {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background: linear-gradient(45deg, #7b00ff, #ffaa00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 200px;
+  letter-spacing: 1px;
+  font-size: 24px; 
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 15px 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.header-image {
+  position: absolute;
+  left: 30px;
+  top: 0;
+  height: 100px;
+  width: 100px;
+}
+.header-image:hover {
+  transition: height 0.3s ease;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
