@@ -1,2 +1,3 @@
 # BougieBistro
-Project for web tech
+The Bougie Bistro is an integrated web platform that enables users to order food for delivery and make restaurant reservations online seamlessly. Designed to enhance dining convenience, the system offers a user-friendly interface that allows customers to browse menus, place real-time delivery orders, or book tables at their preferred restaurants with just a few clicks. The platform will support personalized recommendations, real-time availability updates, and secure payment options. It benefits both customers and restaurant owners by streamlining operations, reducing wait times, and increasing visibility and revenue through digital engagement.
+
